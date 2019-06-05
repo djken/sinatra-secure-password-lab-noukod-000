@@ -64,6 +64,7 @@ class ApplicationController < Sinatra::Base
     redirect "/"
   end
 
+  # specifically designed to control logic in our views
   helpers do
     def logged_in?
       !!session[:user_id]
